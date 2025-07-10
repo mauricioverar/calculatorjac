@@ -1,0 +1,25 @@
+# Archivos compilados
+*.class
+
+# Logs
+*.log
+
+# Directorios de configuración y compilación
+target/
+out/
+bin/
+
+# Archivos del entorno de desarrollo
+*.iml
+.idea/
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias empaquetadas (si no usas repositorio central)
+lib/
+
+# Archivos de Maven específicos
+.mvn/
