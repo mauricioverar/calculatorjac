@@ -64,7 +64,9 @@ public class CalculadoraTest {
   @Test
   void testMultiplicarConAssume() {
     Calculadora calculadora = new Calculadora();
-    assumeTrue(calculadora.multiplicar(4, 5) == 20);
-    assertEquals(20, calculadora.multiplicar(4, 5));
+    boolean featureActiva = true; // Simulando una característica activa
+    
+    assumeTrue(featureActiva);
+    assertEquals(-20, calculadora.multiplicar(4, -5));
   }
 }
