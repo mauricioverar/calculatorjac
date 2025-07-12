@@ -74,7 +74,7 @@
       <version>2.0.7</version>
     </dependency>
 
-    <!-- Logback Classic -->
+    <!-- Logback Classic 1.4.12 -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
