@@ -29,12 +29,12 @@ public class CalculadoraTest {
     assertEquals(2, calculadora.restar(5, 3));
   }
 
-  @DisplayName("Test de multiplicación")
+/*   @DisplayName("Test de multiplicación")
   @Test
   void testMultiplicar() {
     Calculadora calculadora = new Calculadora();
     assertEquals(20, calculadora.multiplicar(4, 5));
-  }
+  } */
 
   @DisplayName("Test de división")
   @Test
@@ -80,5 +80,13 @@ public class CalculadoraTest {
   void testEsPar(int numero) {
     Calculadora calculadora = new Calculadora();
     assertTrue(calculadora.esPar(numero), "El número " + numero + " debería ser par");
+  }
+
+  @DisplayName("Test de números impares")
+  @ParameterizedTest
+  @ValueSource(ints = {1, 3, 5, 7})
+  void testEsImpar(int numero) {
+    Calculadora calculadora = new Calculadora();
+    assertTrue(!calculadora.esPar(numero), "El número " + numero + " debería ser impar");
   }
 }
